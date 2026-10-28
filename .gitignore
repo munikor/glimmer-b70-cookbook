@@ -1,0 +1,6 @@
+# Not affiliated with Intel, Meta, or the Muse Glimmer model authors.
+# Model weights, the llm-scaler/vLLM images, and BetterBench have their own upstream
+# licenses — this repo contains only original text, benchmark scripts, and reports.
+# Check upstream terms before redistributing or commercially using their artifacts.
+__pycache__/
+*.pyc
