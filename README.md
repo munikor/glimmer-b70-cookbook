@@ -203,7 +203,7 @@ limit in every B70 benchmark you publish, or your numbers are fiction.
 - [`scripts/bench_glim.py`](scripts/bench_glim.py) — stream-timed 512-token decode probe
 - [`scripts/bench_glim2.py`](scripts/bench_glim2.py) — workload-sensitive pair (counting vs prose)
 - [`scripts/needle196k.py`](scripts/needle196k.py) — depth-50/92 needle harness (sized by true tokens; reasoning-delta aware)
-- **Charted reports (live, native on DUT):** [FP8-KV keeper](https://munikor.github.io/glimmer-b70-cookbook/reports/betterbench-keeper-native-fp8kv.html) . [bf16-KV baseline](https://munikor.github.io/glimmer-b70-cookbook/reports/betterbench-baseline-native-bf16kv.html) — fingerprint captured on the B70 machine. Client-generated A/Bs (banner-labeled): [fp8kv](https://munikor.github.io/glimmer-b70-cookbook/reports/betterbench-fp8kv.html) . [async](https://munikor.github.io/glimmer-b70-cookbook/reports/betterbench-async-sched.html)
+- **Charted reports (live, native on DUT):** [FP8-KV keeper](https://munikor.github.io/glimmer-b70-cookbook/reports/betterbench-keeper-native-fp8kv.html) . [bf16-KV baseline](https://munikor.github.io/glimmer-b70-cookbook/reports/betterbench-baseline-native-bf16kv.html) — fingerprint captured on the B70 machine. Client-generated A/Bs (banner-labeled): [fp8kv](https://munikor.github.io/glimmer-b70-cookbook/reports/betterbench-fp8kv.html) . [async](https://munikor.github.io/glimmer-b70-cookbook/reports/betterbench-async-sched.html) . [batched A/B seqs8 — ALL 105.9, conc 8-wide 223 agg t/s](https://munikor.github.io/glimmer-b70-cookbook/reports/betterbench-batched-seqs8-180W.html)
 - Bench tool: [BetterBench](https://github.com/GGZ14/BetterBench) (Apache-2.0; ran 192 requests/config across 8 categories)
 
 ## License & disclaimers
