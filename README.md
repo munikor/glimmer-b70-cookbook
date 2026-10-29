@@ -88,6 +88,8 @@ drafter graph capture). `health=200` is your ready signal.
 - **Concurrency:** aggregate ~85 tok/s at 1→8 streams; decode median per-request holds
   96–110 tok/s; TTFT queues linearly.
 - 36/40 decode runs hit the quick preset's `max_tokens` cap. **Caveat: Glimmer is a reasoning model** — most quick-preset runs spend the entire token budget on reasoning tokens and never reach an answer token (see the report's reasoning/answer split: 87-100% reasoning share). These decode numbers are *generation* speed; time-to-first-answer at short budgets is lower, and a raised-`max_tokens` full run is the right follow-up.
+- [LoRA serving on B70](recipes/lora-serving.md) — base+adapter per-request routing on vLLM 0.31; torch sidecars belong on RDNA3
+
   steady-state; a rigorous full run raises the cap.
 
 ### 3.2 The 200 tok/s question, mechanically
